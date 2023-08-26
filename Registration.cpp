@@ -41,4 +41,4 @@ static SoapySDR::Device *makeMiriSDR(const SoapySDR::Kwargs &args) {
     return new SoapyMiri(args);
 }
 
-static SoapySDR::Registry registerMiri("soapyMiri", &SoapyMiri::findMiriSDR, &makeMiriSDR, SOAPY_SDR_ABI_VERSION);
+static SoapySDR::Registry registerMiri("Miri", &SoapyMiri::findMiriSDR, &makeMiriSDR, SOAPY_SDR_ABI_VERSION);
